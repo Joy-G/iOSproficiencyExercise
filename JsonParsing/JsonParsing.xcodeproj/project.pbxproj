@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		A81F415B1CD66283000CDC23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F415A1CD66283000CDC23 /* main.m */; };
 		A81F415E1CD66283000CDC23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F415D1CD66283000CDC23 /* AppDelegate.m */; };
-		A81F41611CD66283000CDC23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F41601CD66283000CDC23 /* ViewController.m */; };
 		A81F41661CD66283000CDC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81F41651CD66283000CDC23 /* Assets.xcassets */; };
 		A81F41691CD66283000CDC23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81F41671CD66283000CDC23 /* LaunchScreen.storyboard */; };
+		A81F41721CD66950000CDC23 /* RecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F41711CD66950000CDC23 /* RecordTableViewController.m */; };
+		A81F41751CD66A5C000CDC23 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F41741CD66A5C000CDC23 /* Record.m */; };
+		A81F41771CD66AA7000CDC23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81F41761CD66AA7000CDC23 /* Foundation.framework */; };
+		A81F41791CD66AAE000CDC23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81F41781CD66AAE000CDC23 /* UIKit.framework */; };
+		A81F417C1CD66B3E000CDC23 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F417B1CD66B3E000CDC23 /* ImageDownloader.m */; };
+		A81F417F1CD66DE9000CDC23 /* ParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A81F417E1CD66DE9000CDC23 /* ParseOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +24,19 @@
 		A81F415A1CD66283000CDC23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A81F415C1CD66283000CDC23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A81F415D1CD66283000CDC23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A81F415F1CD66283000CDC23 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A81F41601CD66283000CDC23 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A81F41651CD66283000CDC23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A81F41681CD66283000CDC23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A81F416A1CD66283000CDC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81F41701CD66950000CDC23 /* RecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewController.h; sourceTree = "<group>"; };
+		A81F41711CD66950000CDC23 /* RecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewController.m; sourceTree = "<group>"; };
+		A81F41731CD66A5C000CDC23 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		A81F41741CD66A5C000CDC23 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		A81F41761CD66AA7000CDC23 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A81F41781CD66AAE000CDC23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A81F417A1CD66B3E000CDC23 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		A81F417B1CD66B3E000CDC23 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		A81F417D1CD66DE9000CDC23 /* ParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseOperation.h; sourceTree = "<group>"; };
+		A81F417E1CD66DE9000CDC23 /* ParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81F41791CD66AAE000CDC23 /* UIKit.framework in Frameworks */,
+				A81F41771CD66AA7000CDC23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 		A81F414D1CD66283000CDC23 = {
 			isa = PBXGroup;
 			children = (
+				A81F41781CD66AAE000CDC23 /* UIKit.framework */,
+				A81F41761CD66AA7000CDC23 /* Foundation.framework */,
 				A81F41581CD66283000CDC23 /* JsonParsing */,
 				A81F41571CD66283000CDC23 /* Products */,
 			);
@@ -56,10 +73,16 @@
 		A81F41581CD66283000CDC23 /* JsonParsing */ = {
 			isa = PBXGroup;
 			children = (
+				A81F41701CD66950000CDC23 /* RecordTableViewController.h */,
+				A81F41711CD66950000CDC23 /* RecordTableViewController.m */,
+				A81F417A1CD66B3E000CDC23 /* ImageDownloader.h */,
+				A81F417B1CD66B3E000CDC23 /* ImageDownloader.m */,
+				A81F41731CD66A5C000CDC23 /* Record.h */,
+				A81F41741CD66A5C000CDC23 /* Record.m */,
+				A81F417D1CD66DE9000CDC23 /* ParseOperation.h */,
+				A81F417E1CD66DE9000CDC23 /* ParseOperation.m */,
 				A81F415C1CD66283000CDC23 /* AppDelegate.h */,
 				A81F415D1CD66283000CDC23 /* AppDelegate.m */,
-				A81F415F1CD66283000CDC23 /* ViewController.h */,
-				A81F41601CD66283000CDC23 /* ViewController.m */,
 				A81F41651CD66283000CDC23 /* Assets.xcassets */,
 				A81F41671CD66283000CDC23 /* LaunchScreen.storyboard */,
 				A81F416A1CD66283000CDC23 /* Info.plist */,
@@ -145,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A81F41611CD66283000CDC23 /* ViewController.m in Sources */,
 				A81F415E1CD66283000CDC23 /* AppDelegate.m in Sources */,
+				A81F417F1CD66DE9000CDC23 /* ParseOperation.m in Sources */,
+				A81F41721CD66950000CDC23 /* RecordTableViewController.m in Sources */,
+				A81F417C1CD66B3E000CDC23 /* ImageDownloader.m in Sources */,
+				A81F41751CD66A5C000CDC23 /* Record.m in Sources */,
 				A81F415B1CD66283000CDC23 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
