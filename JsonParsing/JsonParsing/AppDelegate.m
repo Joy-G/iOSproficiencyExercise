@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "RecordTableViewController.h"
 
 @interface AppDelegate ()
+
+    @property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
 
@@ -17,7 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:screenBounds];
+    
+    // Allocating the TableViewController as the RootViewController
+    RecordTableViewController *recordTableViewController = [[RecordTableViewController alloc] init];
+    
+    // Creating a universal NavigationController
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:recordTableViewController];
+    
+    // Setting the window
+    [self.window setRootViewController:self.navigationController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
